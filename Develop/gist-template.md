@@ -1,10 +1,11 @@
-# Title (replace with your title)
+# Regex Tutorial: Match URL with Regular Expressions
 
-Introductory paragraph (replace this with your text)
+URL Regex: A regular or rational expression defined as characters in a pattern or a sequence that replace or find string operations which may be useful locating a string in a URL.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A Regex proves useful in matching a URL in order to locate special text patterns. 
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
 
 ## Table of Contents
 
@@ -23,13 +24,32 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+Anchors are used to check if a string fully matches a pattern, although they themlseves do not match characters. They strictly affirdm a string matches a location.
+* Use the ^ anchor to match the beginning of the text. 
+* Use the $ anchor to match the end of the text.
 
 ### Quantifiers
 
 ### OR Operator
 
 ### Character Classes
-
+* Character Classes : 
+\s: Whitespace
+\S: Not whitespace
+\w: Word
+\W: Not word
+\d: Digit
+\D: Not digit
+\x: Hexade­cimal digit
+\O: Octal digit
+* Special Character Classes
+\n: Newline
+\r: Carriage return
+\t: Tab
+\v: Vertical tab
+\f: Form feed
+\xxx: Octal character xxx
+\xhh: Hex character hh
 ### Flags
 
 ### Grouping and Capturing
@@ -46,4 +66,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+- Miranda Thompson is a University of Oregon: Bootcamp Student aspiring to be a web developer. Currently resides on Oregon Coast. 
+[MirandaT77 Github](https://github.com/MirandaT77)  
+[LinkedIn]
+:e-mail:[Email me](mailto:ranileah7@gmail.com)

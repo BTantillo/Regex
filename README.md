@@ -18,4 +18,4 @@
 * THEN I find a section about the author and a link to the author’s GitHub profile
 
 ## Made by:
-Miranda T# Tutorial-Regex
+Miranda T
