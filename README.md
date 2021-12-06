@@ -18,4 +18,7 @@
 * THEN I find a section about the author and a link to the author’s GitHub profile
 
 ## Made by:
-Miranda T
+Miranda Thompson
+* [Miranda's Github](https://github.com/MirandaT77)  
+* [Miranda's LinkedIn](https://www.linkedin.com/in/mirandathompson/)
+* :e-mail:[Miranda's Email](mailto:ranileah7@gmail.com)

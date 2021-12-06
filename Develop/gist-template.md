@@ -36,8 +36,7 @@ Curly braces provide:
 * { x } searches the pattern x number of times
 * { x, } searches the pattern a minimum of x times
 * { x, y } searches the pattern a minimum of x and maximum of y
-This expression : (https?:\/\/)?
-is looking http or https
+
 
 
 ### OR Operator
@@ -48,7 +47,10 @@ A character class is  the set of characters that could occur in a string. The UR
 The \d character class is looking for any digits, a \D looks for non-digits, \s searches for space symbols, tab and newlines, \S looks for all but \s, \. any characters with the regex 's' flag, while the \w character is looking for an alphanumeric character. 
 
 ### Flags
-Flags are used at the end of a regex, after a clsoing slash. They are tokens that will modify parameters of a search. Multiple flags can be set by writing one after another with NO spaces. Flags must be written in lowercase. This URL does not contain any flags. 
+Flags are used at the end of a regex, after a closing slash. They are tokens that will modify parameters of a search. Multiple flags can be set by writing one after another with NO spaces. Flags must be written in lowercase. This URL does not contain any flags. An example of a flag would be if the above expression showed :
+```
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/g
+```
 Flag Expressions:
 * i: Ignores casing. Makes expression case-sensitive
 * g: Global. Makes expression search for all occurences
@@ -58,21 +60,39 @@ Flag Expressions:
 * u: Unicode. Expression assumes individual characters are code points, not code units and will then match 32 bit characters.
 
 ### Grouping and Capturing
-Capturing Group is a part of a pattern that can be enclosed in a parentheses and is a way to treat multiple characters as one unit. 
-
+Capturing Group is a part of a pattern that can be enclosed in a parentheses () and is a way to treat multiple characters as one unit. The example expression has many groupings such as: 
+```
+(https?:\/\/) which is looking for the http(s),([\da-z\.-]+) which will look for initial domain, ([a-z\.]{2,6}) looks for top level domain, and ([\/\w \.-]*) file paths.
+```
 ### Bracket Expressions
+is a matching or non-matching list expression and consists of one or more expressions that will be found in square brackets []. It represents a special character class and is a quantified rule providing range construct. They adapt to a users or applications locale. 
 
 ### Greedy and Lazy Match
+As expected, the definition of a greedy match, is a search that will try to find the longest possible string, whereas a lazy match is search will find the smallest possible string. 
+Greedy quantifiers are:
+- + = one or more 
+- * = Zero or more
+- {2,4} = Two to four times as greedy
+Laxy quantifier:
+- ?
+This expression : 
+```
+(https?:\/\/)?
+```
+ uses the lazy match of ? and is looking http OR https
 
 ### Boundaries
+Boundaries are similar to an anchor and uses the expression \b for word boundaries and \B for non-word boundaries. They are a zero-length match that marks the beginning and end of an alphanumerical sequence and will make it easier to find whole words.
 
 ### Back-references
+Backreferences are filters
 
 ### Look-ahead and Look-behind
 
 ## Author
 
-Miranda Thompson is a University of Oregon: Bootcamp Student aspiring to be a web developer. Currently resides on Oregon Coast. 
-[Miranda's Github](https://github.com/MirandaT77)  
-[LinkedIn](https://www.linkedin.com/in/mirandathompson/)
-:e-mail:[Email me](mailto:ranileah7@gmail.com)
+Miranda Thompson is a University of Oregon Bootcamp Student aspiring to be a Full-stack web developer. Currently resides on the Oregon Coast. 
+
+* [Miranda's Github](https://github.com/MirandaT77)  
+* [Miranda's LinkedIn](https://www.linkedin.com/in/mirandathompson/)
+* :e-mail:[Miranda's Email](mailto:ranileah7@gmail.com)
