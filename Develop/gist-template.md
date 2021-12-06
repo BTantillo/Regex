@@ -1,3 +1,4 @@
+
 # Regex Tutorial: Match URL with Regular Expressions
 
 URL Regex: A regular or rational expression defined as characters in a pattern or a sequence that replace or find string operations which may be useful locating a string in a URL.
@@ -5,8 +6,9 @@ URL Regex: A regular or rational expression defined as characters in a pattern o
 ## Summary
 
 A Regex proves useful in matching a URL in order to locate special text patterns. 
+```
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
-
+```
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -70,7 +72,7 @@ Capturing Group is a part of a pattern that can be enclosed in a parentheses and
 
 ## Author
 
-- Miranda Thompson is a University of Oregon: Bootcamp Student aspiring to be a web developer. Currently resides on Oregon Coast. 
-[MirandaT77 Github](https://github.com/MirandaT77)  
-[LinkedIn]
+Miranda Thompson is a University of Oregon: Bootcamp Student aspiring to be a web developer. Currently resides on Oregon Coast. 
+[Miranda's Github](https://github.com/MirandaT77)  
+[LinkedIn](https://www.linkedin.com/in/mirandathompson/)
 :e-mail:[Email me](mailto:ranileah7@gmail.com)
