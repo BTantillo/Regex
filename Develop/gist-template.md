@@ -1,4 +1,3 @@
-
 # Regex Tutorial: Match URL with Regular Expressions
 
 URL Regex: A regular or rational expression defined as characters in a pattern or a sequence that replace or find string operations which may be useful locating a string in a URL.
@@ -21,7 +20,6 @@ https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -68,7 +66,7 @@ Greedy quantifiers are:
 - + = one or more revised gist
 - * = Zero or more
 - {2,4} = Two to four times as greedy
-Laxy quantifier:
+Lazy quantifier:
 - ?
 This expression : 
 ```(https?:\/\/)?``` uses the lazy match of ? and is looking http OR https, ```[a-zA-Z0-9()]{1,6}``` is looking for a-z, A-Z, 0-9; one to six times as greedy.
@@ -78,8 +76,6 @@ Boundaries are similar to an anchor and uses the expression \b for word boundari
 
 ### Back-references
 Backreferences are filters used to match the same text previously matched by a capturing group. An example would be when you desire to search for a repeated word, the first match could use a pattern that extracts a signle word, the second would be a back reference that referes to the captured group. The above example does not include nay backreferences.
-
-### Look-ahead and Look-behind
 
 ## Author
 
