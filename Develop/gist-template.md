@@ -75,7 +75,7 @@ This expression :
 Boundaries are similar to an anchor and uses the expression \b for word boundaries and \B for non-word boundaries. They are a zero-length match that marks the beginning and end of an alphanumerical sequence and will make it easier to find whole words. The beginning of this expression ```\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)``` is searching for a whole word or digit.
 
 ### Back-references
-Backreferences are filters used to match the same text previously matched by a capturing group. An example would be when you desire to search for a repeated word, the first match could use a pattern that extracts a signle word, the second would be a back reference that referes to the captured group. The above example does not include nay backreferences.
+Backreferences are filters used to match the same text previously matched by a capturing group. An example would be when you desire to search for a repeated word, the first match could use a pattern that extracts a signle word, the second would be a back reference that referes to the captured group. The above example does not include any backreferences.
 
 ## Author
 
